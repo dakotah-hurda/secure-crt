@@ -12,7 +12,7 @@ def _nb_retrieve_records():
 
     load_dotenv()
 
-    netbox = "https://633-fl11-netbox-sv01/"
+    netbox = "https://NETBOX-URL-GOES-HERE/"
     netbox_token = os.environ.get("netbox_token")
     nb = pynetbox.api(netbox, netbox_token)
     nb_records = []
@@ -75,7 +75,7 @@ def _nb_sitegroup_path_determinator(site, group_data):
 
     load_dotenv()
 
-    netbox = "https://633-fl11-netbox-sv01/"
+    netbox = "https://NETBOX-URL-GOES-HERE/"
     netbox_token = os.environ.get("netbox_token")
     nb = pynetbox.api(netbox, netbox_token)
 
@@ -110,7 +110,7 @@ def _crt_path_generator(output_dict):
 
     load_dotenv()
 
-    netbox = "https://633-fl11-netbox-sv01/"
+    netbox = "https://NETBOX-URL-GOES-HERE/"
     netbox_token = os.environ.get("netbox_token")
     nb = pynetbox.api(netbox, netbox_token)
 
